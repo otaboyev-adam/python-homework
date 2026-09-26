@@ -41,14 +41,21 @@
 # 3-Question 
 
 
-# txt = "abcabcadabcdeabcdefabcdefg"
-# result = ''
+# txt = input()
+
+# result = ""
+# used = set()
+# count = 0
 
 # for i in range(len(txt)):
 #     result += txt[i]
-#     if (i + 1) % 3 == 0:
-#         if txt[i] not in "aeiou" and i != len(txt) - 1:
+#     count += 1
+
+#     if count >= 3:
+#         if txt[i] not in "aeiou" and txt[i] not in used and i != len(txt) - 1:
 #             result += "_"
+#             used.add(txt[i])
+#             count = 0
 
 # print(result)
 
