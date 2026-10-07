@@ -2,25 +2,25 @@
 # 1-question
 
 
-# def convert_celsius_to_fahrenheit(celsius):
-#     return celsius * 9 / 5 + 32
+def convert_celsius_to_fahrenheit(celsius):
+    return celsius * 9 / 5 + 32
 
 
-# celsius = float(input("Haroratni Celsiusda kiriting: "))
-# fahrenheit = round(convert_celsius_to_fahrenheit(celsius), 2)
+celsius = float(input("Haroratni Celsiusda kiriting: "))
+fahrenheit = round(convert_celsius_to_fahrenheit(celsius), 2)
 
-# print(f"Siz kiritgan harorat Fahrenheitda {fahrenheit} daraja bo'ladi")
-
-
-
-# def convert_fahrenheit_to_celsius(fahrenheit):
-#     return  (fahrenheit - 32) * 5 / 9
+print(f"Siz kiritgan harorat Fahrenheitda {fahrenheit} daraja bo'ladi")
 
 
-# fahrenheit = float(input("Haroratni fahrenheit kiriting: "))
-# celsius= round(convert_fahrenheit_to_celsius(fahrenheit), 2)
 
-# print(f"Siz kiritgan harorat celsiusda {celsius} daraja bo'ladi")
+def convert_fahrenheit_to_celsius(fahrenheit):
+    return  (fahrenheit - 32) * 5 / 9
+
+
+fahrenheit = float(input("Haroratni fahrenheit kiriting: "))
+celsius= round(convert_fahrenheit_to_celsius(fahrenheit), 2)
+
+print(f"Siz kiritgan harorat celsiusda {celsius} daraja bo'ladi")
 
 
 
@@ -32,13 +32,13 @@
 # 2-question
 
 
-# def invest(amount, rate, years):
-#     for year in range(1, years + 1):
-#         amount += amount * rate
-#         print(f'Year {year}: ${round(amount)}')
+def invest(amount, rate, years):
+    for year in range(1, years + 1):
+        amount += amount * rate
+        print(f'Year {year}: ${round(amount)}')
 
 
-# invest(1000, 0.06, 5)
+invest(1000, 0.06, 5)
 
 
 
@@ -52,18 +52,18 @@
 # 3-question
 
 
-# def find_factors(number):
-#     for factor in range(1, number + 1):
-#         if number % factor == 0:
-#             print(f"{factor} is a factor of {number}")
+def find_factors(number):
+    for factor in range(1, number + 1):
+        if number % factor == 0:
+            print(f"{factor} is a factor of {number}")
 
 
-# number = int(input("Butun musbat son kiriting: "))
+number = int(input("Butun musbat son kiriting: "))
 
-# if number > 0:
-#     find_factors(number)
-# else:
-#     print("Musbat son kiriting.")
+if number > 0:
+    find_factors(number)
+else:
+    print("Musbat son kiriting.")
 
 
 
